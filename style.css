@@ -15,15 +15,18 @@ body {
   padding: 60px;
   position: relative;
   overflow: hidden;
+}
 
 .hero h1 {
   font-size: 48px;
   z-index: 2;
+  position: relative;
 }
 
 .sub {
   opacity: 0.7;
   z-index: 2;
+  position: relative;
 }
 
 /* 背景视频 */
@@ -50,6 +53,10 @@ body {
   margin: 10px 0;
 }
 
+.chapter-list a:hover {
+  color: #fff;
+}
+
 /* 章节内容 */
 .chapter {
   padding: 80px 60px;
@@ -69,11 +76,10 @@ body {
   margin-top: 20px;
 }
 
-/* 动画 */
+/* 暂时关闭隐藏动画 */
 .reveal {
   opacity: 1;
-  transform: translateY(0px);
-  transition: all 1s ease;
+  transform: translateY(0);
 }
 
 .reveal.active {
